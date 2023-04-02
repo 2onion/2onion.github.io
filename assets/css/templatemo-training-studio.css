@@ -206,6 +206,16 @@ header
   border-radius: 50%;
   overflow: hidden;
 
+  float: left;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  line-height: 80px;
+  color: #fff;
+  margin-top: 15px;
+  margin-right: 5px;
 }
 
 .background-header {
@@ -289,7 +299,13 @@ header
   position: relative;
   z-index: 999;
 }
-
+.nav ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+}
 .header-area .main-nav .nav li {
   padding-left: 20px;
   padding-right: 20px;
