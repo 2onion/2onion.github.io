@@ -614,6 +614,233 @@ header
   }
 }
 
+/*
+About me
+ */
+.about-me {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+.about-me .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-me .image {
+  flex-basis: 40%;
+  margin-right: 40px;
+}
+.about-me .image img{
+  max-width: 100%;
+  border-radius: 50%;
+}
+.about-me .content {
+  flex-basis: 60%;
+}
+.about-me h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 800;
+  color: #232d39;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0px;
+}
+.about-me h2 em {
+  font-style: normal;
+  color: #32cd32;
+}
+.about-me p {
+  margin-bottom: 20px;
+  color: #555555;
+}
+.about-me .cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff5500;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.about-me .cta-button:hover {
+  background-color: #ff3300;
+}
+.about-me .social-buttons {
+  margin-top: 20px;
+}
+.about-me .social-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #3b5998; /* Colore Facebook */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.about-me .social-button.instagram {
+  background-color: #dd2a7b; /* Colore Instagram */
+}
+.about-me .social-button.twitter {
+  background-color: #1da1f2; /* Colore Twitter */
+}
+.about-me .social-button:hover {
+  background-color: #2a477a; /* Colore Facebook al passaggio del mouse */
+}
+.about-me .social-button.instagram:hover {
+  background-color: #c01f68; /* Colore Instagram al passaggio del mouse */
+}
+.about-me .social-button.twitter:hover {
+  background-color: #1991db; /* Colore Twitter al passaggio del mouse */
+}
+
+@media (max-width: 768px) {
+  .about-me .container {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .about-me .image {
+    margin-bottom: 20px;
+  }
+}
+/*
+Spotlight
+ */
+
+.spotlight {
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  position: relative;
+ padding: 7%;
+  background: linear-gradient(-45deg, #000000 45%, #ffffff 45%);
+  color: #ffffff;
+}
+.spotlight .divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ff0000 0%, #00ff00 100%);
+  z-index: -1;
+  opacity: 0.5;
+  pointer-events: none; /* Per evitare che la linea di divisione interferisca con gli elementi interni */
+}
+.spotlight .image {
+  -moz-order: 1;
+  -webkit-order: 1;
+  -ms-order: 1;
+  order: 1;
+  border-radius: 0;
+  object-fit: cover;
+  padding-bottom: 0px;
+  border-bottom: 0px;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Assicura che l'immagine sia sopra il pentagono */
+}
+
+.spotlight .image img {
+  border-radius: 0;
+
+}
+.spotlight .pentagon {
+  position: relative;
+  width: 500px; /* Imposta la larghezza desiderata del pentagono */
+  height: 500px; /* Imposta l'altezza desiderata del pentagono */
+  margin: 0 auto; /* Centra il pentagono orizzontalmente nella sezione */
+  background: linear-gradient(45deg, #000000 0%, #0fe80f 100%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); /* Crea la forma del pentagono */
+}
+
+.spotlight .content {
+  padding: 2em 4em 0.1em 4em ;
+  -moz-order: 2;
+  -webkit-order: 2;
+  -ms-order: 2;
+  order: 2;
+  max-width: 48em;
+  width: 60%;
+}
+.spotlight h2{
+  margin-top: 5px;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 1px;
+}
+.spotlight h2 em {
+  font-style: normal;
+  color: #32cd32;
+}
+
+
+.spotlight:nth-child(2n) {
+  -moz-flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+
+@media screen and (max-width: 1280px) {
+
+  .spotlight .image {
+    width: 20%;
+  }
+
+  .spotlight .content {
+    width: 55%;
+  }
+
+}
+
+@media screen and (max-width: 980px) {
+
+  .spotlight {
+    display: block;
+  }
+
+  .spotlight br {
+    display: none;
+  }
+
+  .spotlight .image {
+    width: 30%;
+  }
+
+  .spotlight .content {
+    padding: 4em 3em 2em 3em ;
+    max-width: none;
+    text-align: center;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 736px) {
+
+  .spotlight .content {
+    padding: 3em 2em 1em 2em ;
+  }
+
+}
 
 /* 
 ---------------------------------------------
