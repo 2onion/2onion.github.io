@@ -658,6 +658,8 @@ About me
   margin-bottom: 20px;
   color: #555555;
 }
+
+
 .about-me .cta-button {
   display: inline-block;
   padding: 12px 24px;
@@ -670,35 +672,61 @@ About me
 .about-me .cta-button:hover {
   background-color: #ff3300;
 }
-.about-me .social-buttons {
-  margin-top: 20px;
+.about-me .social-icons {
+  text-align: center;
+  margin-bottom: 20px;
 }
-.about-me .social-button {
+.about-me .social-icon {
   display: inline-block;
-  padding: 10px 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
   margin-right: 10px;
-  background-color: #3b5998; /* Colore Facebook */
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 4px;
   transition: background-color 0.3s ease;
 }
-.about-me .social-button.instagram {
-  background-color: #dd2a7b; /* Colore Instagram */
-}
-.about-me .social-button.twitter {
-  background-color: #1da1f2; /* Colore Twitter */
-}
-.about-me .social-button:hover {
-  background-color: #2a477a; /* Colore Facebook al passaggio del mouse */
-}
-.about-me .social-button.instagram:hover {
-  background-color: #c01f68; /* Colore Instagram al passaggio del mouse */
-}
-.about-me .social-button.twitter:hover {
-  background-color: #1991db; /* Colore Twitter al passaggio del mouse */
+.about-me .social-icon i {
+  font-size: 20px;
+  color: #ffffff;
 }
 
+.about-me .social-icon.facebook {
+  background-color: #3b5998;
+}
+.about-me .social-icon.instagram {
+  background-color: #dd2a7b; /* Colore Instagram */
+}
+.about-me .social-icon.twitter {
+  background-color: #1da1f2; /* Colore Twitter */
+}
+.about-me .social-icon.tiktok {
+  background-color: #000000;
+}
+.about-me .social-icon.telegram {
+  background-color: #0088cc;
+}
+.about-me .social-icon.youtube {
+  background-color: #ff0000;
+}
+.about-me .social-icon.facebook:hover {
+  background-color: #2a477a; /* Colore Facebook al passaggio del mouse */
+}
+.about-me .social-icon.instagram:hover {
+  background-color: #c01f68; /* Colore Instagram al passaggio del mouse */
+}
+.about-me .social-icon.twitter:hover {
+  background-color: #1991db; /* Colore Twitter al passaggio del mouse */
+}
+.about-me .social-icon.youtube:hover {
+  background-color: #cc0000;
+}
+.about-me .social-icon.telegram:hover {
+  background-color: #0066a6;
+}
+.about-me .social-icon.tiktok:hover {
+  background-color: #010101;
+}
 @media (max-width: 768px) {
   .about-me .container {
     flex-direction: column;
@@ -1334,24 +1362,83 @@ contact
 footer
 --------------------------------------------- 
 */
-footer {
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+.footer  .container {
+  /* Stili per il contenitore */
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer .footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer .footer-logo img {
+  max-width: 150px;
+}
+
+.footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-links li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer .footer-links li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer .footer-links li a:hover {
+  color: #32cd32;
+}
+.footer .footer-social {
+  margin-top: 20px;
+}
+
+.footer .social-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
-  padding: 30px 0px;
+  background-color: #ffffff;
+  color: #000000;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 
-footer p {
-  color: #232d39;
-  font-size: 13px;
+.footer .social-icon i {
+  font-size: 20px;
 }
 
-footer p a {
-  cursor: pointer;
-  color: #ed563b;
+.footer .social-icon:hover {
+  background-color: #cccccc;
 }
 
-footer p a:hover {
-  color: #ed563b;
+.footer .footer-bottom {
+  text-align: center;
+  margin-top: 20px;
 }
+
+.footer .footer-bottom p {
+  margin: 0;
+}
+
 
 
 
