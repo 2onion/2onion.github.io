@@ -15,7 +15,12 @@
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
+      <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link
+              href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+              rel="stylesheet"
+      />
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
     <link rel="stylesheet" href="assets/css/templatemo-training-studio.css">
@@ -99,11 +104,9 @@
                 <p>Offro allenamenti personalizzati e motivazione costante per aiutarti a raggiungere i tuoi obiettivi in modo efficace ed efficiente.</p>
                 <p>Se sei pronto a prenderti cura di te stesso e trasformare il tuo corpo, non esitare a contattarmi!</p>
                 <div class="social-icons">
-                    <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/davideiula_chinesiologo/" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="http://tiktok.com/@davideiulapt    " class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
-                    <a href="#" class="social-icon telegram"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="http://tiktok.com/@davideiulapt " class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://t.me/+dPdpbFVEWCA2Mjg0" class="social-icon telegram"><i class="fab fa-telegram-plane"></i></a>
                     <a href="https://www.youtube.com/@Powercali" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
@@ -249,72 +252,68 @@
         </div>
     </section>
     <!-- ***** Our Classes End ***** -->
-    <!-- da rimuovere
-    <section class="section" id="schedule">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-heading dark-bg">
-                        <h2>Programmi <em>Schede</em></h2>
-                        <img src="assets/images/braccio.png" alt="">
-                        <p>Ti elenco delle possibile schede che potrei farti seguire, per farti capire le tipologie di esercizi.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="filters">
-                        <ul class="schedule-filter">
-                            <li class="active" data-tsfilter="monday">Lunedì</li>
-                            <li data-tsfilter="tuesday">Martedì</li>
-                            <li data-tsfilter="wednesday">Mercoledì</li>
-                            <li data-tsfilter="thursday">Giovedì</li>
-                            <li data-tsfilter="friday">Venerdì</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="schedule-table filtering">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td class="day-time">Massa</td>
-                                    <td class="day-time">SERIE</td>
-                                    <td class="day-time">RIPETIZIONI</td>
-                                    <td class="day-time">RECUPERO</td>
-                                </tr>
-                                <tr>
-                                    <td class="monday wednesday ts-item" data-tsmeta="monday" data-tsmeta="wednesday">Push Up</td>
-                                    <td class="monday ts-item" data-tsmeta="monday">4</td>
-                                    <td class="monday friday ts-item" data-tsmeta="monday" data-tsmeta="friday">12</td>
-                                    <td>60"</td>
-                                </tr>
-                                <tr>
-                                    <td class="monday ts-item" data-tsmeta="monday">Deadlift</td>
-                                    <td class="monday ts-item" data-tsmeta="monday">4</td>
-                                    <td  class="monday ts-item" data-tsmeta="monday">12</td>
-                                    <td>60"</td>
-                                </tr>
-                                <tr>
-                                    <td class="monday ts-item" data-tsmeta="monday">Squat</td>
-                                    <td class="monday ts-item" data-tsmeta="monday">4</td>
-                                    <td  class="monday ts-item" data-tsmeta="monday">12</td>
-                                    <td>60"</td>
-                                </tr>
-                                <tr>
-                                    <td class="monday ts-item" data-tsmeta="monday">Rematore</td>
-                                    <td class="monday ts-item" data-tsmeta="monday">4</td>
-                                    <td  class="monday ts-item" data-tsmeta="monday">12</td>
-                                    <td>60"</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+
+    <!-- ***** Inizio Testimonials ***** -->
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="section-heading" style="margin-bottom: 0px">
+                <h2>Alcune <em>Testimonianze</em></h2>
+                <img src="assets/images/line-dec.png" alt="">
+                <p>Ti elenco alcune testimonianze di miei clienti, che si sono resi disponibili
+                    nel raccontare la loro esperienza e percorso con me. Grazie ancora!.</p>
             </div>
         </div>
+    </div>
+    <section class="containerTestimonial" style="background-color: white">
+        <div class="testimonial mySwiper">
+            <div class="testi-content swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="assets/images/first-trainer.jpg" alt="primo testimonial" class="image" />
+                    <p>
+                        Davide è una persona gentile ma che riesce a darti la carica per dare sempre il 110%,
+                        mi alleno con lui da un anno ormai e sono molto contento dei suoi allenamenti,
+                        cambia spesso le schede così l'allenamento non è mai noioso.
+                    </p>
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+                    <div class="details">
+                        <span class="name">Mario Cena</span>
+                        <span class="job">Allenamento Forza</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="assets/images/second-trainer.jpg" alt="secondo testimonial" class="image" />
+                    <p>
+                        Ho iniziato ad allenarmi con davide perchè volevo diventare più muscoloso,
+                        ho provato la palestra per un anno, ma da solo non sono riuscito ad avere grandi risulti.
+                        Grazie a Davide gli allenamenti mi facevo sentire lo sforzo e hanno portato risultati.
+                    </p>
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+                    <div class="details">
+                        <span class="name">Paolo Magri</span>
+                        <span class="job">Allenamento Ipertrofia</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="assets/images/third-trainer.jpg" alt="terzo testimonial" class="image" />
+                    <p>
+                        Mi alleno da molti anni, ma sentivo il bisogno di fare quel salto in più,
+                        quindi mi sono rivolto a davide.Grazie a lui anche se ero già in buona forma,
+                        sono riuscito a migliorare e ho scoperto di fare un sacco di errori nelle mie esecuzioni.
+                    </p>
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+                    <div class="details">
+                        <span class="name">Rocco Verdolino</span>
+                        <span class="job">Power Cali</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
--->
+    <!-- ***** Testimonials  fine ***** -->
+
     <!-- ***** Testimonials Starts ***** -->
     <section class="section" id="trainers">
         <div class="container">
@@ -323,7 +322,8 @@
                     <div class="section-heading">
                         <h2>Alcune <em>Testimonianze</em></h2>
                         <img src="assets/images/line-dec.png" alt="">
-                        <p>Ti elenco alcune testimonianze di miei clienti, che si sono resi disponibili nel raccontare la loro esperienza e percorso con me. Grazie ancora!.</p>
+                        <p>Ti elenco alcune testimonianze di miei clienti, che si sono resi disponibili
+                            nel raccontare la loro esperienza e percorso con me. Grazie ancora!.</p>
                     </div>
                 </div>
             </div>
@@ -336,7 +336,9 @@
                         <div class="down-content">
                             <span>Allenamento forza</span>
                             <h4>Mario Cena</h4>
-                            <p>Davide è una persona gentile ma che riesce a darti la carica per dare sempre il 110%, mi alleno con lui da un anno ormai e sono molto contento dei suoi allenamenti, cambia spesso le schede così l'allenamento non è mai noioso.</p>
+                            <p>Davide è una persona gentile ma che riesce a darti la carica per dare sempre il 110%,
+                                mi alleno con lui da un anno ormai e sono molto contento dei suoi allenamenti,
+                                cambia spesso le schede così l'allenamento non è mai noioso.</p>
                         </div>
                     </div>
                 </div>
@@ -348,7 +350,9 @@
                         <div class="down-content">
                             <span>Allenamento Ipertrofia</span>
                             <h4>Paolo Magri</h4>
-                            <p>Ho iniziato ad allenarmi con davide perchè volevo diventare più muscoloso,ho provato la palestra per un anno, ma da solo non sono riuscito ad avere grandi risulti.Grazie a Davide gli allenamenti mi facevo sentire lo sforzo e hanno portato risultati.</p>
+                            <p>Ho iniziato ad allenarmi con davide perchè volevo diventare più muscoloso,
+                                ho provato la palestra per un anno, ma da solo non sono riuscito ad avere grandi risulti.
+                                Grazie a Davide gli allenamenti mi facevo sentire lo sforzo e hanno portato risultati.</p>
                         </div>
                     </div>
                 </div>
@@ -360,7 +364,9 @@
                         <div class="down-content">
                             <span>Power Cali</span>
                             <h4>Rocco Verdolino</h4>
-                            <p>Mi alleno da molti anni, ma sentivo il bisogno di fare quel salto in più, quindi mi sono rivolto a davide.Grazie a lui anche se ero già in buona forma, sono riuscito a migliorare e ho scoperto di fare un sacco di errori nelle mie esecuzioni .</p>
+                            <p>Mi alleno da molti anni, ma sentivo il bisogno di fare quel salto in più,
+                                quindi mi sono rivolto a davide.Grazie a lui anche se ero già in buona forma,
+                                sono riuscito a migliorare e ho scoperto di fare un sacco di errori nelle mie esecuzioni.</p>
 
                         </div>
                     </div>
@@ -450,6 +456,7 @@
     <!-- Bootstrap -->
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!-- Plugins -->
     <script src="assets/js/scrollreveal.min.js"></script>
@@ -458,9 +465,9 @@
     <script src="assets/js/imgfix.min.js"></script> 
     <script src="assets/js/mixitup.js"></script> 
     <script src="assets/js/accordions.js"></script>
-    
+
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
-
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
